@@ -12,6 +12,12 @@ DateTime::DateTime(int dayIn, int monthIn, int yearIn) {
 	innerYear = yearIn;
 }
 
+DateTime::DateTime(const DateTime &toCopy) {
+	innerDay = toCopy.innerDay;
+	innerMonth = toCopy.innerMonth;
+	innerYear = toCopy.innerYear;
+}
+
 std::string DateTime::getToday() {
 	tm cur;
 	time_t _curt;
