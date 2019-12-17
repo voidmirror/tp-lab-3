@@ -23,6 +23,7 @@ void Circle::setArea(double ar) {
 	ference = 2 * pi * radius;
 }
 
+
 double Circle::getRadius() {
 	return radius;
 }
